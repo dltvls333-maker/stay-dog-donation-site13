@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>유기견 후원 웹사이트 - 템플릿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">후원하개</a>
+      <button id="navToggle" class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="#about">소개</a></li>
+          <li><a href="#projects">사례</a></li>
+          <li><a href="#donate">후원</a></li>
+          <li><a href="#contact">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>함께하는 작은 손길, 큰 기적</h1>
+          <p>유기견들에게 따뜻한 보금자리를 만들어주세요. 투명하게 보고되는 후원 시스템.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#donate">지금 후원하기</a>
+            <a class="btn ghost" href="#projects">사례 보기</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./images/placeholder-hero.png" alt="유기견 이미지" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">우리에 대해</h2>
+        <p class="lead">지역 보호소와 협력하여 구조 및 치료, 입양 연결을 돕습니다. 모든 후원금은 활동 내역과 함께 공개됩니다.</p>
+        <div class="grid cards">
+          <article class="card reveal">
+            <h3>구조 활동</h3>
+            <p>신속한 구조와 응급 처치로 생명을 살립니다.</p>
+          </article>
+          <article class="card reveal">
+            <h3>치료 & 재활</h3>
+            <p>전문적인 의료 지원과 재활 프로그램을 제공합니다.</p>
+          </article>
+          <article class="card reveal">
+            <h3>입양 연계</h3>
+            <p>새 가정을 찾을 때까지 책임 있는 케어를 합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section light">
+      <div class="container">
+        <h2 class="section-title">성공 사례</h2>
+        <div class="grid projects">
+          <div class="project reveal">
+            <img src="./images/placeholder-1.png" alt="사례 1">
+            <h4>꼬미의 이야기</h4>
+            <p>부상에서 회복해 새 가족을 만난 사례</p>
+          </div>
+          <div class="project reveal">
+            <img src="./images/placeholder-2.png" alt="사례 2">
+            <h4>토리의 변화</h4>
+            <p>사회화 훈련으로 자신감을 회복한 사례</p>
+          </div>
+          <div class="project reveal">
+            <img src="./images/placeholder-3.png" alt="사례 3">
+            <h4>별이의 새 출발</h4>
+            <p>정기 후원으로 안정된 치료를 받은 사례</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donate" class="section">
+      <div class="container donate-inner">
+        <h2 class="section-title">후원 방법</h2>
+        <p class="lead">간편한 카드 결제 또는 정기 후원으로 참여하실 수 있습니다.</p>
+        <div class="donate-grid reveal">
+          <div class="donate-card">
+            <h3>일시후원</h3>
+            <p>원하시는 금액을 한 번에 후원합니다.</p>
+            <a class="btn primary" href="#">후원하기</a>
+          </div>
+          <div class="donate-card">
+            <h3>정기후원</h3>
+            <p>매월 꾸준한 후원으로 안정적인 보호소 운영에 기여합니다.</p>
+            <a class="btn ghost" href="#">정기후원 신청</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section light">
+      <div class="container">
+        <h2 class="section-title">문의하기</h2>
+        <form class="contact-form" onsubmit="return false;">
+          <label>이름<input type="text" name="name" placeholder="이름"></label>
+          <label>이메일<input type="email" name="email" placeholder="email@example.com"></label>
+          <label>메시지<textarea name="message" placeholder="문의 내용을 적어주세요"></textarea></label>
+          <button class="btn primary" type="submit">전송</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 후원하개</div>
+      <div class="socials">
+        <a href="#">인스타</a> · <a href="#">페이스북</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
